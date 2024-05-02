@@ -29,3 +29,13 @@ function adicionarTarefa(){
     //volta para o input da tarefa
     document.getElementById("task").focus();
 }
+
+//Função Listar tarefas
+
+function listarTarefas(){
+    let valor="";
+    for(let i=0; i<tarefas.length;i++){
+        valor += tarefas[i] +"<br>";
+    }
+    document.getElementById("lista").innerHTML =valor;
+}
